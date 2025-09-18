@@ -4,6 +4,7 @@ require 'json'
 require 'date'
 
 uri = URI.parse('https://worldweather.wmo.int/en/json/47_en.json')
+# New change
 response = Net::HTTP.get_response(uri)
 
 doc = JSON.parse(response.body)
