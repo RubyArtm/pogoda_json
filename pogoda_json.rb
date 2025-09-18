@@ -3,7 +3,7 @@ require 'uri'
 require 'json'
 require 'date'
 
-uri = URI.parse('https://worldweather.wmo.int/en/json/51_en.json')
+uri = URI.parse('https://worldweather.wmo.int/en/json/47_en.json')
 response = Net::HTTP.get_response(uri)
 
 doc = JSON.parse(response.body)
